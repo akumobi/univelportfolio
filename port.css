@@ -17,6 +17,16 @@ html{
 body{
     background-color: #c3c3c3;
 }
+
+nav{
+    background-color: #000000;
+    height: 150px;
+    
+}
+
+nav > ul{
+    display: flex;
+}
 footer{
     background-color: #3c3c3c;
 }
