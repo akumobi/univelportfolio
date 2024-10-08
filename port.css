@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Dosis:wght@200..800&display=swap');
 
 * {
+    margin: 0;
     text-decoration: none;
     list-style: none;
 }
@@ -20,12 +21,49 @@ body{
 
 nav{
     background-color: #000000;
-    height: 150px;
-    
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
-nav > ul{
-    display: flex;
+nav ul li{
+    float: left;
+}
+
+nav ul li a{
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: xx-large;
+}
+
+nav ul{
+    flex-direction: row;
+    padding-block: 20px;
+    padding-inline-start: 50%;
+    /* align-items: flex-end; */
+    /* float: right; */
+}
+#contact{
+    background-color: #000000;
+    border: 2px, solid, #ffffff;
+    border-radius: 5px;
+}
+#contact:hover{
+    background-color: #292929;
+}
+.active{
+    border-bottom: 2px solid #3c3c3c;
+}
+
+#hero{
+    padding-block: 180px;
+    padding-inline: 120px;
 }
 footer{
     background-color: #3c3c3c;
