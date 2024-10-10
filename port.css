@@ -27,11 +27,13 @@ nav{
     position: fixed;
     top: 0;
     width: 100%;
-    justify-content: flex-end;
+    padding-inline-end: 15%;
+    align-items: center;
 }
 
 .navlogo, .footerlogo{
     max-width: 10%;
+    padding-inline-start: 50px;
 }
 nav ul li{
     float: left;
@@ -48,9 +50,9 @@ nav ul li a{
 
 nav ul{
     flex-direction: row;
-    padding-block: 20px;
+    /* padding-block: 20px; */
     padding-inline-start: 50%;
-    /* align-items: flex-end; */
+    justify-content: space-around;
     /* float: right; */
 }
 #contact{
@@ -59,10 +61,12 @@ nav ul{
     border-radius: 5px;
 }
 #contact:hover{
-    background-color: #292929;
+    border-color: #3c3c3c;
+    color: #000000;
+    background-color: #ffffff;
 }
 .active{
-    border-bottom: 2px solid #3c3c3c;
+    background-color: #3c3c3c;
 }
 
 #hero{
@@ -73,9 +77,58 @@ nav ul{
 .project{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-}
-footer{
-    background-color: #3c3c3c;
+    grid-template-rows: repeat(2, 1fr);
+    padding: 180px 120px;
+    gap: 40px;
+    /* background-image: url(./media/13.png);
+    background-color: #292929; */
 }
 
+.projects{
+    border: 2px solid #3c3c3c;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+div.projects button{
+    color: #3c3c3c;
+    font-size: x-large;
+    width: 100%;
+}
+
+footer{
+    background-color: #3c3c3c;
+    height: 250px;
+    padding-block: 50px;
+    align-items: center;
+}
+
+footer > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.footsocial, .footcon{
+    /* border-left: 2px solid #000000; */
+    padding: 25px;
+    text-decoration: none;
+    color: #000000;
+    list-style: none;
+}
+
+.footsocial > ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.copyright{
+    margin: auto;
+    width: 50%;
+    padding-block: 60px;
+    border-color: #292929;
+    border-top: 1px solid;
+}
