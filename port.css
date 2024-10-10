@@ -72,6 +72,31 @@ nav ul{
 #hero{
     padding-block: 180px;
     padding-inline: 120px;
+    display: flex;
+    flex-direction: row;
+    color: #ffffff;
+    justify-content: space-evenly;
+}
+
+#hero p{
+    font-size: x-large;
+    font-weight: lighter;
+}
+
+#hero h2{
+    font-size: xx-large;
+}
+
+#heroimage{
+    width: 100%;
+}
+
+#ctabuttons *{
+    font-size: xx-large;
+    font-weight: lighter;
+    border-color: #000000;
+    padding: 20px;
+    
 }
 
 .project{
@@ -132,3 +157,45 @@ footer > div{
     border-color: #292929;
     border-top: 1px solid;
 }
+
+#contactform{
+    background-color: #292929;
+    width: 50%;
+    height: 350px;
+    margin: 0 auto;
+    padding-top: 200px;
+}
+
+#contactform > form > fieldset > legend{
+    font-size: xx-large;
+    border-color: #3c3c3c;
+    color: #ffffff;
+}
+
+#contactform > form > fieldset > ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3);
+    gap: 15px 0px;
+    background-color: transparent;
+}
+
+#contactform > form > fieldset > ul > li:nth-child(5){
+    grid-area: 3/1/4/3;
+}
+
+#contactform > form > fieldset > div{
+    
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+}
+
+#contactform > form > fieldset > div > input{
+    width: 70%;
+    font-size: larger;
+}
+
+/* #contactform > form > fieldset > ul li{
+    height: 50px;;
+} */
